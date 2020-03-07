@@ -14,7 +14,7 @@ public class NavigationTests {
 
 
 
-public static void ChromeTest() {
+public  void ChromeTest() {
 
       WebDriver driver = BrowserFactory.getDriver("Chrome");
 
@@ -30,9 +30,10 @@ public static void ChromeTest() {
     System.out.println(driver.getTitle().equalsIgnoreCase(titleGoogle));
     driver.navigate().forward();
     System.out.println(driver.getTitle().equalsIgnoreCase(titleEtsy));
+    driver.quit();
 }
 
-    public static void firefoxTest() {
+    public  void firefoxTest() {
 
         WebDriver driver = BrowserFactory.getDriver("firefox");
 
@@ -48,9 +49,10 @@ public static void ChromeTest() {
         System.out.println(driver.getTitle().equalsIgnoreCase(titleGoogle));
         driver.navigate().forward();
         System.out.println(driver.getTitle().equalsIgnoreCase(titleEtsy));
+        driver.quit();
     }
 
-    public static void edgeTest() {
+    public  void edgeTest() {
 
         WebDriver driver = BrowserFactory.getDriver("edge");
 
@@ -66,6 +68,7 @@ public static void ChromeTest() {
         System.out.println(driver.getTitle().equalsIgnoreCase(titleGoogle));
         driver.navigate().forward();
         System.out.println(driver.getTitle().equalsIgnoreCase(titleEtsy));
+        driver.quit();
     }
 
 
