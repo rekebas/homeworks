@@ -40,8 +40,8 @@ public class TitleVerification {
                      System.out.println(" The Webpages Don't Have The Same Title. TEST FAILED!!! ");
                 }
 
-                if (urls.get(0).startsWith("http://practice.cybertekschool.com/")&&
-                (urls.get(1).startsWith("http://practice.cybertekschool.com/"))&&urls.get(2).startsWith("http://practice.cybertekschool.com/")){
+                if (urls.get(0).startsWith(expectedURL)&&
+                (urls.get(1).startsWith(expectedURL))&&urls.get(2).startsWith(expectedURL)){
             System.out.println(" The Webpages Have The Correct URL. TEST PASSED! ");
         }
                 else {
